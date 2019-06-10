@@ -13,3 +13,5 @@ Adding Registration and Login Page
 8. cd server
 9. npm install
 10. npm start
+
+# Stay tuned for final version
