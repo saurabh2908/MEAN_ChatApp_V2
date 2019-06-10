@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">  
+    <script src="bower_components/angular/angular.min.js"></script>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/commonconst.js"></script>
+    <script src="./scripts/regfac.js"></script>
+    <script src="./scripts/regctr.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="lar">
+    
+
+      <div ng-controller="regctr">
+          <div class="container">
+            <form >
+                <h1>Register here</h1>
+                        <input type="text" placeholder="enter your first name" ng-model="first">
+                        <input type="text" placeholder="enter your middle name" ng-model="second">
+                        <input type="text" placeholder="enter your last name" ng-model="third"><br>
+                        <input type="text" placeholder="enter your email" ng-model="fourth"><br>
+                        <input type="text" placeholder="Enter your phone no." ng-model="five"><br>
+                        <input type="text" placeholder="city" ng-model="six"><br>
+                        <input type="text" placeholder="state" ng-model="seven"><br>
+                        <input type="password" placeholder="create your password" ng-model="eight"><br>
+                       
+                        <button class=" btn btn-block bg-primary" ng-click="data()" type="submit">Register</button>
+                    </form>
+                     <br>
+                       <hr>
+                   
+                       <form  id="log">
+                           <h1>Login here</h1>
+                                    <input type="text" placeholder="enter your email" ng-model="nine"><br>
+                                    <input type="password" placeholder="enter your password" ng-model="ten"><br>
+                                    <button class=" btn btn-block bg-primary" ng-click="datalog()" type="submit">Login</button>
+                                
+                     </form>
+                    </div>
+       
+        <!-- <div class="container">
+                <button ng-click="showme=false">Register</button>
+                <button ng-click="showme=true">Login</button>
+             </div><br>
+        </div> -->
+    </div>
+</body>
+</html>

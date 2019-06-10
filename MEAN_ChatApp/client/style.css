@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+}
+#log{
+    margin-left:"20px" 
+}
